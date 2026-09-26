@@ -1,5 +1,5 @@
 -- =========================================================
--- Chachees' Chai Cafe - Supabase PostgreSQL Schema & RLS
+-- Chachee's Chai - Supabase PostgreSQL Schema & RLS
 -- Run this script in the Supabase Dashboard -> SQL Editor
 -- =========================================================
 

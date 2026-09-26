@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { CUSTOMER_REVIEWS, CAFE_LOCATIONS } from '../data/mockData';
 import { ReviewItem } from '../types';
 import { useAuth } from '../context/AuthContext';
+import { syncReviewToSupabase } from '../lib/supabase';
 import { 
   Star, 
   ThumbsUp, 
@@ -128,6 +129,21 @@ export const ReviewsPage: React.FC = () => {
           savedId = String(data.review.id);
         }
       }
+
+      // Dual-sync to Supabase if configured
+      syncReviewToSupabase({
+        user_id: user?.uid || null,
+        author,
+        initials,
+        role: "Chachee's Community Member",
+        branch,
+        rating,
+        text,
+        items_mentioned: favoriteItems || null,
+        helpful_count: 0,
+        verified: true,
+        badge: 'Verified Visit',
+      });
     } catch (err) {
       console.warn('Backend review save notice:', err);
     } finally {
@@ -136,7 +152,7 @@ export const ReviewsPage: React.FC = () => {
         id: savedId,
         author,
         initials,
-        role: 'Chachees Community Member',
+        role: "Chachee's Community Member",
         branch,
         rating,
         date: 'Just now',
@@ -344,7 +360,7 @@ export const ReviewsPage: React.FC = () => {
                 Patron Review
               </span>
               <h3 className="text-2xl font-serif font-bold text-white mt-1">
-                Share Your Chachees&apos; Memory
+                Share Your Chachee&apos;s Memory
               </h3>
             </div>
 

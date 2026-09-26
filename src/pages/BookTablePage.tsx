@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { TableBooking } from '../types';
 import { CAFE_LOCATIONS, ASSET_IMAGES } from '../data/mockData';
 import { useAuth } from '../context/AuthContext';
+import { syncBookingToSupabase } from '../lib/supabase';
 import { 
   Calendar, 
   Clock, 
@@ -129,6 +130,24 @@ export const BookTablePage: React.FC<BookTablePageProps> = ({ onBookingSuccess }
           bookingId = `BK-${data.booking.id}`;
         }
       }
+
+      // Dual-sync to Supabase if configured
+      syncBookingToSupabase({
+        user_id: user?.uid || null,
+        full_name: fullName,
+        phone: phone || '760414533',
+        email: email || 'majeamu98@gmail.com',
+        location: selectedOutlet,
+        date: selectedDate,
+        session: selectedSession,
+        time_slot: selectedTime,
+        guests,
+        zone: selectedZone,
+        occasion: occasion || null,
+        notes: notes || null,
+        has_chai_flight: hasChaiFlight,
+        status: 'confirmed',
+      });
     } catch (err) {
       console.warn('Backend booking save notice:', err);
     } finally {
@@ -185,7 +204,7 @@ export const BookTablePage: React.FC<BookTablePageProps> = ({ onBookingSuccess }
                 Instant Confirmation
               </span>
               <h3 className="text-xl sm:text-2xl font-serif font-bold mt-0.5">
-                The Chachees&apos; Baithak Promise
+                The Chachee&apos;s Baithak Promise
               </h3>
               <p className="text-xs text-[#d5c3b7] mt-1">
                 Zero reservation fee. 15-minute grace period. Complimentary welcome cookies.

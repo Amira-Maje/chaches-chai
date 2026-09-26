@@ -1,5 +1,5 @@
 {
-  "name": "Chachees' Chai Cafe",
+  "name": "Chachee's Chai",
   "description": "Artisanal neighborhood cafe for handcrafted chais, steaming clay kulhads, authentic freshly prepared street snacks, and warm conversations.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]

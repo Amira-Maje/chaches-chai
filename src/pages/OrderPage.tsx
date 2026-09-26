@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { MenuItem, CartItem, PageType } from '../types';
 import { MENU_ITEMS, ASSET_IMAGES } from '../data/mockData';
 import { useAuth } from '../context/AuthContext';
+import { syncOrderToSupabase } from '../lib/supabase';
 import { 
   Bike, 
   Store, 
@@ -146,6 +147,23 @@ export const OrderPage: React.FC<OrderPageProps> = ({
           generatedOrderId = `CC-${data.order.id}`;
         }
       }
+
+      // Dual-sync to Supabase if configured
+      syncOrderToSupabase({
+        user_id: user?.uid || null,
+        customer_name: user?.displayName || 'Chai Lover',
+        customer_phone: '760414533',
+        customer_email: user?.email || 'majeamu98@gmail.com',
+        delivery_address: orderType === 'delivery' ? deliveryAddress : selectedOutlet,
+        order_type: orderType,
+        items: JSON.stringify(cart),
+        subtotal: Math.round(subtotal),
+        tax: Math.round(taxes),
+        delivery_fee: Math.round(deliveryFee),
+        total: Math.round(grandTotal),
+        status: 'confirmed',
+        payment_method: 'cash_on_delivery',
+      });
     } catch (err) {
       console.warn('Backend order save fallback:', err);
     } finally {

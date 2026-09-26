@@ -461,7 +461,7 @@ export const CUSTOMER_REVIEWS = REVIEWS_DATA;
 
 export const FAQS_DATA = [
   {
-    question: 'How is Chachees’ chai different from regular cafes?',
+    question: "How is Chachee's chai different from regular cafes?",
     answer: 'We slow-brew in small artisanal batches every 15-20 minutes using single-origin organic Assam CTC leaves and 100% freshly pounded whole spices (ginger, green cardamom, cloves, cinnamon). We never use instant tea pre-mixes, machine powders, or artificial syrups.',
   },
   {
@@ -473,12 +473,12 @@ export const FAQS_DATA = [
     answer: 'Absolutely! Our 500ml and 1000ml thermal flasks keep chai piping hot for over 60 minutes. We also provide customized office chai subscriptions with daily scheduled deliveries.',
   },
   {
-    question: 'Are pets allowed in Chachees’ cafes?',
+    question: "Are pets allowed in Chachee's cafes?",
     answer: 'Yes! Our outdoor veranda and garden patio areas in Bandra, Koregaon Park, and Indiranagar are 100% pet-friendly. We even have fresh water bowls and dog-friendly treats on the house!',
   },
   {
     question: 'Is there a booking fee for table reservations?',
-    answer: 'Zero booking fee! Table reservations at Chachees’ are 100% complimentary. We hold your reserved nook for up to 15 minutes past your scheduled slot.',
+    answer: "Zero booking fee! Table reservations at Chachee's are 100% complimentary. We hold your reserved nook for up to 15 minutes past your scheduled slot.",
   },
   {
     question: 'Do you cater for private events or weddings?',

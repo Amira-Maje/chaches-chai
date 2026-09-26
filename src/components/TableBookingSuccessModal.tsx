@@ -28,7 +28,7 @@ export const TableBookingSuccessModal: React.FC<TableBookingSuccessModalProps> =
   if (!isOpen || !booking) return null;
 
   const handleAddToCalendar = () => {
-    const title = encodeURIComponent(`Chai & Baithak at Chachees' - ${booking.location}`);
+    const title = encodeURIComponent(`Chai & Baithak at Chachee's Chai - ${booking.location}`);
     const details = encodeURIComponent(`Table reservation under ${booking.fullName} for ${booking.guests} guest(s). Zone: ${booking.zone}. Welcome Chai Flight included: ${booking.hasChaiFlight ? 'Yes' : 'No'}.`);
     const gcalUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&details=${details}&location=${encodeURIComponent(booking.location)}`;
     window.open(gcalUrl, '_blank');
@@ -54,7 +54,7 @@ export const TableBookingSuccessModal: React.FC<TableBookingSuccessModalProps> =
             Baithak Table Reserved
           </span>
           <h2 className="text-2xl font-serif font-bold text-white mt-1">
-            See You at Chachees&apos;!
+            See You at Chachee&apos;s Chai!
           </h2>
           <p className="text-xs text-[#d5c3b7] mt-1">
             Reservation Pass: <span className="font-mono font-bold text-[#e89f53]">{booking.id}</span>

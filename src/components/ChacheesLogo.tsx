@@ -30,7 +30,7 @@ export const ChacheesLogo: React.FC<ChacheesLogoProps> = ({
         className={`${sizeClasses[size]} w-auto shrink-0`}
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        aria-label="Chachees' Chai Logo Icon"
+        aria-label="Chachee's Chai Logo Icon"
       >
         {/* Steam waves */}
         <path
@@ -92,7 +92,7 @@ export const ChacheesLogo: React.FC<ChacheesLogoProps> = ({
             className="font-serif-display font-black text-xl tracking-tight"
             style={{ color: textColor }}
           >
-            Chachees’
+            Chachee&apos;s
           </span>
           <span
             className="w-1.5 h-1.5 rounded-full inline-block mb-2"
@@ -102,10 +102,10 @@ export const ChacheesLogo: React.FC<ChacheesLogoProps> = ({
         <div className="flex items-center gap-1.5 mt-0.5">
           <span className="h-[1px] w-2.5" style={{ backgroundColor: goldColor }} />
           <span
-            className="text-[10px] tracking-[0.22em] font-bold uppercase"
+            className="text-[10px] tracking-[0.25em] font-bold uppercase"
             style={{ color: isWhite ? '#E6E2DC' : '#7D5447' }}
           >
-            Chai Cafe
+            Chai
           </span>
           <span className="h-[1px] w-2.5" style={{ backgroundColor: goldColor }} />
         </div>

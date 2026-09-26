@@ -269,7 +269,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
       {/* Bottom Bar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-[#332219] flex flex-col sm:flex-row items-center justify-between text-xs text-[#9a887d] gap-4">
         <p className="flex items-center gap-1">
-          &copy; {new Date().getFullYear()} Chachees&apos; Chai Cafe Pvt. Ltd. Crafted with{' '}
+          &copy; {new Date().getFullYear()} Chachee&apos;s Chai. Crafted with{' '}
           <Heart className="w-3.5 h-3.5 text-[#e89f53] inline fill-current" /> for chai lovers worldwide.
         </p>
         <div className="flex items-center gap-6">

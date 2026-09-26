@@ -31,7 +31,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             An Ode to the Timeless Soul of Indian Chai
           </h1>
           <p className="mt-4 text-xs sm:text-sm text-[#d5c3b7] leading-relaxed">
-            In a fast-paced world of drive-thrus and automated paper cup machines, Chachees&apos; was born to protect the sacred ritual of slow-brewed tea, earthen clay kulhads, and heartfelt community baithaks.
+            In a fast-paced world of drive-thrus and automated paper cup machines, Chachee&apos;s Chai was born to protect the sacred ritual of slow-brewed tea, earthen clay kulhads, and heartfelt community baithaks.
           </p>
         </div>
 
@@ -61,14 +61,14 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             However, we noticed a painful dilemma: you either had authentic roadside tapris where you couldn’t sit for hours, or sterile western coffee chains where chai was an afterthought made from synthetic powders and sugary syrups.
           </p>
           <p className="font-semibold text-[#8e3a1d]">
-            Chachees&apos; was created to bridge this divide. We combine the fiery authenticity of the street chai wallah with the comfort, aesthetic warmth, and hospitality of a luxurious neighborhood living room.
+            Chachee&apos;s Chai was created to bridge this divide. We combine the fiery authenticity of the street chai wallah with the comfort, aesthetic warmth, and hospitality of a luxurious neighborhood living room.
           </p>
         </div>
 
         <div className="relative rounded-3xl overflow-hidden shadow-xl border border-[#ebdcd0] bg-[#fbf4eb] h-80 sm:h-96">
           <img
             src={ASSET_IMAGES.cafeInterior}
-            alt="Chachees Baithak Heritage"
+            alt="Chachee's Chai Baithak Heritage"
             className="w-full h-full object-cover"
           />
           <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-xs p-4 rounded-2xl border border-[#ebdcd0] text-xs">

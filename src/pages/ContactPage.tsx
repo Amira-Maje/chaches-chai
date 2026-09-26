@@ -71,10 +71,10 @@ export const ContactPage: React.FC = () => {
             <span>We&apos;re All Ears</span>
           </span>
           <h1 className="text-3xl sm:text-4xl font-serif font-bold text-white">
-            Connect With the Chachees&apos; Family
+            Connect With the Chachee&apos;s Family
           </h1>
           <p className="mt-3 text-xs sm:text-sm text-[#d5c3b7] leading-relaxed">
-            Planning a wedding or corporate chai bar? Interested in bringing Chachees&apos; to your city? Or just want to share feedback on your last cup? We’d love to hear from you.
+            Planning a wedding or corporate chai bar? Interested in bringing Chachee&apos;s Chai to your city? Or just want to share feedback on your last cup? We’d love to hear from you.
           </p>
         </div>
       </div>

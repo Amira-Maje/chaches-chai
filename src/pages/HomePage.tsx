@@ -98,7 +98,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             </h1>
 
             <p className="mt-5 text-sm sm:text-base text-[#d8c3b2] leading-relaxed">
-              Step into Chachees&apos; — your neighborhood baithak for freshly pounded spice chais served in earthen clay kulhads, buttery bun maska, and unhurried conversations that last for hours.
+              Step into Chachee&apos;s Chai — your neighborhood baithak for freshly pounded spice chais served in earthen clay kulhads, buttery bun maska, and unhurried conversations that last for hours.
             </p>
 
             {/* CTAs */}
@@ -149,14 +149,14 @@ export const HomePage: React.FC<HomePageProps> = ({
         </div>
       </section>
 
-      {/* The 4 Rituals of Chachees */}
+      {/* The 4 Rituals of Chachee's Chai */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-xl mx-auto mb-12">
           <span className="text-xs font-bold uppercase tracking-wider text-[#8e3a1d]">
             The Artisanal Way
           </span>
           <h2 className="text-3xl font-serif font-bold text-[#2d1b13] mt-1">
-            The Chachees&apos; Chai Ritual
+            The Chachee&apos;s Chai Ritual
           </h2>
           <p className="text-xs text-[#6f5647] mt-2">
             No instant pre-mixes. No artificial syrups. Just authentic Indian tea craftsmanship.
@@ -480,7 +480,7 @@ export const HomePage: React.FC<HomePageProps> = ({
           <div className="relative min-h-[300px] lg:min-h-full">
             <img
               src={ASSET_IMAGES.cafeInterior}
-              alt="Chachees Baithak Ambience"
+              alt="Chachee's Chai Baithak Ambience"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-[#24150f] via-transparent to-transparent" />
@@ -567,7 +567,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               Live Artisanal Chai Counter
             </span>
             <h3 className="text-2xl sm:text-3xl font-serif font-bold text-white mt-1">
-              Host a Chachees&apos; Chai Bar at Your Event
+              Host a Chachee&apos;s Chai Bar at Your Event
             </h3>
             <p className="text-xs sm:text-sm text-[#f6dfd0] mt-2 leading-relaxed">
               We bring piping hot brass degchis, earthen kulhads, tandoori chai, and fresh hot samosas to your weddings, corporate offsites, and festive gatherings.
